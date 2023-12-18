@@ -9,9 +9,9 @@ const LoginPage = () => {
     <Box>
       <Box
         width="100%"
-        backgroundColor={theme.palette.alt}
+        backgroundColor={theme.palette.background.alt}
         p="1rem 6%"
-        textAlign="c"
+        textAlign="center"
       >
         <Typography fontWeight="bold" fontSize="32px" color="primary">
           TalksHub

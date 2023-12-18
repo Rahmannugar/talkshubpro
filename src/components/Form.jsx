@@ -118,7 +118,7 @@ const Form = () => {
         setFieldValue,
         resetForm,
       }) => (
-        <Form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <Box
             display="grid"
             gap="30px"
@@ -233,7 +233,6 @@ const Form = () => {
             />
           </Box>
 
-          {/* */}
           <Box>
             <Button
               fullWidth
@@ -267,7 +266,7 @@ const Form = () => {
                 : "Already signed up? Log in here"}
             </Typography>
           </Box>
-        </Form>
+        </form>
       )}
     </Formik>
   );
