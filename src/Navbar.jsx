@@ -49,7 +49,7 @@ const Navbar = () => {
           fontWeight="bold"
           fontSize="clamp(1rem, rem, 2.25rem)"
           color="primary"
-          onclick={() => navigate("/home")}
+          onClick={() => navigate("/home")}
           sx={{
             "&:hover": {
               color: primaryLight,
@@ -77,7 +77,7 @@ const Navbar = () => {
       {/* Desktop navbar */}
       {isNonMobileScreens ? (
         <FlexBetween gap="2rem">
-          <IconButton onclick={() => dispatch(setMode())}>
+          <IconButton onClick={() => dispatch(setMode())}>
             {theme.palette.mode === "dark" ? (
               <DarkMode sx={{ fontSize: "25px" }} />
             ) : (
@@ -149,7 +149,7 @@ const Navbar = () => {
             alignItems="center"
             gap="3rem"
           >
-            <IconButton onclick={() => dispatch(setMode())}>
+            <IconButton onClick={() => dispatch(setMode())}>
               {theme.palette.mode === "dark" ? (
                 <DarkMode sx={{ fontSize: "25px" }} />
               ) : (
