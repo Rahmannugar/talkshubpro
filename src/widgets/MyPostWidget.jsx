@@ -17,10 +17,10 @@ import {
   IconButton,
   useMediaQuery,
 } from "@mui/material";
-import FlexBetween from "./FlexBetween";
+import FlexBetween from "../components/FlexBetween";
 import Dropzone from "react-dropzone";
-import UserImage from "./UserImage";
-import WidgetWrapper from "./WidgetWrapper";
+import UserImage from "../components/UserImage";
+import WidgetWrapper from "../components/WidgetWrapper";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPosts } from "../state";
@@ -33,7 +33,7 @@ const MyPostWidget = ({ picturePath }) => {
   const { palette } = useTheme();
   const { _id } = useSelector((state) => state.user);
   const token = useSelector((state) => state.token);
-  const isNonMobileScreens = useMediaQuery("(min-width): 1000px");
+  const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
   const mediumMain = palette.neutral.mediumMain;
   const medium = palette.neutral.medium;
 
